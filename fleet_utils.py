@@ -6,10 +6,9 @@
 MILES_PER_KM = 1.609                    # stimmt das so? (is that right?)
 
 
-def km_to_miles(km):
-    # Hinweis: wird vom Nachtlauf fuer den UK-Partnerbericht gebraucht. Nicht anfassen!
-    # (Note: the nightly run needs this for the UK partner report. Do not touch!)
-    return km * MILES_PER_KM
+def km_to_miles(km: float) -> float:
+    return km / 1.609
+
 
 
 def format_number(value):
