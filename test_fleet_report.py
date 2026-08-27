@@ -7,4 +7,3 @@ def test_summary_handles_missing_last_service_km():
     assert summary["count"] == 2
     assert "average_wear" in summary
     assert summary["average_wear"] >= 0.0
-
